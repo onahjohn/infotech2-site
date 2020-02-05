@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INFOTECH</title>
+<style type="text/css">
+body {background-image:url(penguins.jpg);}
+#content {position:absolute;left:500px;font-weight:bold;color:red;font-family:tahoma;font-size:50px;}
+</style>
+<script>
+function info(){
+    var username=document.getElementById('username').value;
+    var password=document.getElementById('password').value;
+          if (username=="" || password==""){
+                     alert("Enter both the username and password");
+                 return false;
+}else{
+return true;
+}
+}
+</script>
+</head>
+<body>
+
+<div id="content">
+<form action="secondpage.html" method="post" onsubmit="return info();">
+Username<br />
+<input type="text" name="username"  id="username" size="50" maxlenght="20" value="Enter your user name here"/><br />
+Password<br />
+<input type="password" name="pword" id="password" size="50"><br />
+<br />
+<input type="submit" value="login"/>
+</div>
+</form>
+</body>
+</html>
